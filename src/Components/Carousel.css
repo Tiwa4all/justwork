@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+  }
+  .caro{
+    padding-top: 12%;
+  }
+  .caro-link{
+    width: 100%;
+  }
+  .caro img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    
+  }
+  .caro img:hover{
+    filter:brightness(0.5);
+  }
+  .caro .iqlNsO{
+    flex-direction: column;
+  }
+  .caro a{
+    text-decoration: none;
+  }
+  .caro-content{
+    /* color: #797c7f;
+    font-size: 10px; */
+    color: #b00f10;
+    font-size: 10px;
+    z-index: 1;
+    font-family: poppins;
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+  }
+  .caro .jtKTCe{
+    margin-bottom: 60px;
+  }
+  .caro .rec-arrow-left{
+    position: absolute;
+    margin-top: -18em;
+    z-index: 1;
+    margin-left: 85%;
+    transform: scale(1);
+  }
+  .caro .rec-arrow-right{
+    position: absolute;
+    margin-top: -18em;
+    z-index: 1;
+    margin-left: 90%;
+  }
+  .kXteup{
+    color: #898484 !important;
+  }
+  .kXteup:hover:enabled, .kXteup:focus:enabled {
+    color: #fff !important;
+  }
+  .kXteup, .Slxdj{
+    background-color: black !important;
+  }
+  @media only screen and (max-width: 767px){
+    .caro img{
+      height: auto;
+    }
+    .caro .jtKTCe{
+      margin-top: -30px !important;
+      margin-bottom: 60px;
+      z-index: 1;
+    }
+    .caro .rec-arrow-left{
+      margin-left: 61% !important;
+      margin-top: -12em;
+      display: none;
+      z-index: 1;
+      transform: scale(0.7);
+    }
+    .caro .rec-arrow-right{
+      margin-left: 75%;
+      display: none;
+      margin-top: -12em;
+      transform: scale(0.7);
+    }
+    .caro-content{
+      margin-top: -32px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px){
+    .caro img{
+      height: auto;
+    }
+    .caro-content.caro-content{
+      margin-left: 63%;
+    }
+    .caro .hLByIT{
+      height: 250px !important;
+    }
+    .caro .rec-arrow-left{
+      margin-top: -42%;
+      margin-left: 80%;
+    }
+    .caro .rec-arrow-right{
+      margin-top: -42%;
+    }
+  }

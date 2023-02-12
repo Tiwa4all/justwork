@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    margin: 0;
+  }
+  .clientcard{
+    margin: 20px;
+  }
+  .clientheading{
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65.76px;
+    color: #000000;
+    text-align: start;
+    margin: 80px 0 0 100px;
+    letter-spacing: 0.4px;
+    max-width: 483px;
+  }
+  .cardall{
+    margin: 20px;
+  }
+  .card{
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 10%);;
+  }
+  .card .punct{
+    color: black;
+    font-size: 25px;
+  }
+  .jtKTCe{
+    margin-bottom: 25px;
+  }
+  .card .content{
+    font-family: poppins;
+    font-size: 15px;
+    color: #666666;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+  }
+  .card .name{
+    font-family: poppins;
+    font-size: 18px;
+    margin-top: 40px;
+    font-weight: 900;
+    color: black;
+    line-height: 24.3px;
+    letter-spacing: 1.2px;
+  }
+  .card .company{
+    font-family: poppins;
+    font-size: 16px;
+    line-height: 24.3px;
+    color: #666666;
+    letter-spacing: 1.2px;
+  }
+  @media only screen and (max-width: 767px){
+    .client .rec-arrow-left{
+      position: absolute;
+      margin-top: 0px;
+      z-index: 1;
+      transform: scale(0.5);
+      margin-left: -8px;
+      display: none;
+      margin-bottom: 20px;
+      }
+      .client .rec-arrow-right{
+        position: absolute;
+        display: none;
+        margin-top: 75px;
+        z-index: 1;
+        transform: scale(0.5);
+        margin-left: -8px;
+        margin-bottom: 20px;
+      }
+      .clientcard{
+        margin: 5px;
+      }
+      .client .cjDNDK{
+        margin: 0 1px;
+      }
+      .client .cardall{
+        margin: 3px;
+      }
+      .client .card{
+        padding: 30px;
+      }
+
+      .clientheading{
+        font-size: 30px !important;
+        line-height: 40px;
+        margin: 0 0 0 20px;
+        font-size: 41px;
+      }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px){
+    .card{
+        padding: 13px;
+    }
+  }

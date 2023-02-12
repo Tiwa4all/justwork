@@ -1,0 +1,254 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  .container {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: -20px;
+    display: flex;
+    justify-content: center;
+  }
+  .phoneline{
+    width: 8.9vw;
+    position: absolute;
+    margin-top: 22px;
+    border-style: solid;
+    color: #2f6e91;
+  }
+  .bulb{
+    position: absolute;
+    top: 23.5px;
+    animation-name: swing;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    transform-origin: top;
+    z-index: 1;
+  }
+  .bulb__wire {
+    position: relative;
+    height: 45px;
+    width: 2px;
+    background-color: #2f6e91;
+    border-radius: 3px;
+    z-index: 2;
+  }
+  .bulb__protector {
+    width: 0;
+    height: 0;
+    left: -29px;
+    top: 13px;
+    position: absolute;
+    border-top: solid 30px transparent;
+    border-bottom: solid 30px #2f6e91;
+    border-right: solid 30px transparent;
+    border-left: solid 30px transparent;
+    z-index: 3;
+  }
+  .bulb__light {
+    width: 15px;
+    height: 20px;
+    background-color: rgb(236 31 37);
+    position: absolute;
+    bottom: -38px;
+    left: -6px;
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .light {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 2;
+    top: 100px;
+    box-shadow: 0px 0px 100px 50px #fffcdb;
+  }
+  .bulb__bg {
+    background-color: #212121;
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    left: -300px;
+    top: -212px;
+    z-index: 2;
+    display: none;
+  }
+  
+  @keyframes swing {
+    from {
+      transform: rotateZ(45deg);
+    }
+    to {
+      transform: rotateZ(-45deg);
+    }
+  }
+
+
+
+  .box {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 272px;
+    height: 285px;
+    color: #2f6e91;
+    background: #f0f0f0;
+    /* background: #f0f0f0; */
+    box-shadow:  0 0 0 #cccccc,
+                 0 0 0 #ffffff,
+                  10px 10px 10px #cccccc inset,
+                  -10px -10px 10px #ffffff inset;
+    animation: anime 3s cubic-bezier(0.16, 1, 0.3, 1) 1s infinite alternate;
+    /* animation-fill-mode: forwards; */
+  }
+  .box h1{
+    font-family: Inter, sans-serif;
+    font-size: 2vw;
+    margin-top: 110px;
+  }
+  .box p{
+    font-family: poppins, sans-serif;
+    padding: 15px;
+    color: #054162;
+    text-align: center;
+    font-size: 15px;
+    animation: ee 3s cubic-bezier(0.16, 1, 0.3, 1) 1s infinite alternate;
+  }
+  @keyframes ee {
+    0%{
+      opacity: 0;
+    }
+    25%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  @keyframes anime {
+    0% {
+        font-size: 20px;
+      width: 272px;
+      height: 285px;
+      background: #f0f0f0;
+    box-shadow:  0 0 0 #cccccc,
+                 0 0 0 #ffffff,
+                  10px 10px 10px #cccccc inset,
+                  -10px -10px 10px #ffffff inset;
+  }
+    25% {
+      width: 272px;
+      height: 285px;
+      background: #f8f8f8;
+      box-shadow:  10px 10px 10px #cccccc,
+                   10px 10px 10px #ffffff,
+                   0 0 0 #cccccc inset,
+                   0 0 0 #ffffff inset;
+    }
+    50% {
+      width: 272px;
+      height: 585px;
+      background: #f8f8f8;
+      box-shadow:  10px 10px 10px #cccccc,
+                   10px 10px 10px #ffffff,
+                   0 0 0 #cccccc inset,
+                   0 0 0 #ffffff inset;
+    }
+    100% {
+        font-size: 25px;
+        /* background-image: url('./line1.png') !important; */
+      width: 272px;
+      height: 585px;
+      background: #fafafa;
+      /* box-shadow:  40px 40px 40px #cccccc,
+                   20 0 0 #ffffff,
+                   0 0 0 #cccccc inset,
+                   2px 2px 2px #ffffff inset; */
+                   box-shadow:  0px 0px 10px #cccccc,
+                 0 0 0 #ffffff,
+                  0px 0px 10px #cccccc inset,
+                  -10px -10px 10px #ffffff inset;
+                   
+    }
+  }
+  @media only screen and (max-width: 767px){
+    .container{
+      margin-left: -8px;
+        position: absolute;
+        margin-top: 5px;
+        width: 95%;
+    }
+    .box{
+        position: relative;
+        margin-top: 20px;
+        width: 100% !important;
+        margin-right: 23px;
+        font-size: 3.22vw !important;
+        border-radius: 10px; 
+    }
+    .box h1{
+      font-size: 8vw;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1211px){
+    .container{
+      margin-left: -5px;
+    }
+    .phoneline{
+        margin-left: 0;
+    }
+    @keyframes anime {
+        0% {
+      width: 203px;
+      height: 470px;
+      background: #f0f0f0;
+      box-shadow:  0 0 0 #cccccc,
+                 0 0 0 #ffffff,
+                  10px 10px 10px #cccccc inset,
+                  -10px -10px 10px #ffffff inset;
+    }
+    25% {
+      width: 203px;
+      height: 470px;
+      background: #f8f8f8;
+      box-shadow:  10px 10px 10px #cccccc,
+                   10px 10px 10px #ffffff,
+                   0 0 0 #cccccc inset,
+                   0 0 0 #ffffff inset;
+    }
+        50% {
+            width: 203px;
+            height: 800px;
+            background: #f8f8f8;
+            box-shadow:  10px 10px 10px #cccccc,
+                         10px 10px 10px #ffffff,
+                         0 0 0 #cccccc inset,
+                         0 0 0 #ffffff inset;
+          }
+          100% {
+            width: 203px;
+            height: 800px;
+            background: #fafafa;
+            box-shadow:  0px 0px 10px #cccccc,
+                 0 0 0 #ffffff,
+                  0px 0px 10px #cccccc inset,
+                  -10px -10px 10px #ffffff inset;
+          }
+    }
+    .box{
+        width: 173px !important;
+    }
+    .box p{
+      font-size: 12px;
+      padding: 15px 5px 15px 5px;
+    }
+  }
