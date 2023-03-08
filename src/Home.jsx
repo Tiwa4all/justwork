@@ -12,6 +12,7 @@ const Home = () => {
         <Services/>
         <AboutUs/>
         <ClientReview/>
+        {/* "homepage": "{Tiwa4all}.github.io/{torun}", */}
     </div>
   )
 }
