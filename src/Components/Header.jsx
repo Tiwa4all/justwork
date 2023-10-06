@@ -31,6 +31,7 @@ const Header = ({change, tick}) => {
 
     // usestate was used to on and off the click menu attached with useref for clicking outside to close
     const [showmenu, setShowmenu]= useState(false)
+    
     const click = useRef();
 
 
@@ -82,8 +83,8 @@ const Header = ({change, tick}) => {
                                     {/* I used useRef for this dropdown */}
                         <div className="opt" ref={click} onClick={()=>setShowmenu(!showmenu)} to='' smooth>Services<FaCaretDown className='FaCaretDown'/>
                             {showmenu &&<div  className="drop-down one-drop">
-                                <Link><p>Consultation</p></Link>
-                                <Link><p>Web & Mobile Development</p></Link>
+                                <Link to='/consultation'><p>Consultation</p></Link>
+                                <Link to='*'><p>Web & Mobile Development</p></Link>
                                 <Link><p>Web Management</p></Link>
                                 <Link><p>Clouding</p></Link>
                                 <Link><p>Security</p></Link>                    
@@ -91,9 +92,9 @@ const Header = ({change, tick}) => {
                         </div>
                         <Link onClick={shownavbar} to='/Portfolio' className="opt">Portfolio</Link>
                         {/* <Link className="opt" to='#aboutus' smooth>Faq</Link> */}
-                    </div>
+                    </div> 
                     <div className="contbtn">
-                    <Link to='*'><button onClick={shownavbar} className='ctb' type="submit">CONTACT US</button></Link>
+                    <Link to='/contactus'><button onClick={shownavbar} className='ctb' type="submit">CONTACT US</button></Link>
                     </div>
                 </div>
         </div>

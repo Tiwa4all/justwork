@@ -1,12 +1,11 @@
 import './Aboutpage.css'
-// 'https://secureservercdn.net/50.62.174.75/f4x.a17.myftpupload.com/wp-content/uploads/2022/04/ola123-1-1.png?time=1663750396'
+import dev1 from './f.jpg'
 import ScrollAnimation from 'react-animate-on-scroll';
-const image1 ='https://th.bing.com/th/id/OIP.8wL6m5e-1mazijUco7ciFwHaI1?pid=ImgDet&rs=1';
 const AboutUs = () => {
   return (
     <ScrollAnimation className='' animateIn="fadeInLeft slower" duration={1.2} delay={0.3}>
       <div className="all" id='aboutus'>
-          <img src={image1} alt="" srcset="" />
+          <img src={dev1} alt="" srcset="" />
         <div className="notCarton">
           <h1>Who Are We?</h1><hr/>
           <p>Puchtechn is your number one Nigerian solution driven information technology Company. With us, your
