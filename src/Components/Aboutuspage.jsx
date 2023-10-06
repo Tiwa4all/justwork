@@ -4,8 +4,7 @@ import Ola from './Ola.jpg'
 import Tochukwu from './Tochukwu.jpg';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Link } from 'react-router-dom';
-const image1 ='https://th.bing.com/th/id/OIP.8wL6m5e-1mazijUco7ciFwHaI1?pid=ImgDet&rs=1';
-
+import dev1 from './f.jpg'
 const Aboutuspage = () => {
   return (
     <div className="">
@@ -48,7 +47,7 @@ const Aboutuspage = () => {
       
         <div className="aboutuspage">
           <div className="all" id='aboutus'>
-              <img src={image1} alt="" srcset="" />
+              <img src={dev1} alt="" srcset="" />
             <div className="notCarton">
               <h1>Who Are We?</h1><hr/>
               <p>Puchtechn is your number one Nigerian solution driven information technology Company. With us, your
