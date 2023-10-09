@@ -5,10 +5,11 @@
 }
 .divwithfooterdesign{
     position: absolute;
-    width: 25%;
+    width: 22%;
     opacity: 0.5;
 }
 .footer-all{
+    height: 100%;
     padding: 120px 120px 50px 120px;
     background-color: #7db9db6b;
 }

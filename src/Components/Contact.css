@@ -7,7 +7,7 @@
     padding: 100px 0% 0 0%;
 }
 .allback{
-    height: 100vh;
+    height: 33cm;
     display: flex;
     position: relative;
 }
@@ -21,34 +21,39 @@
 }
 .boxcontent{
     padding: 35px;
+    box-shadow: 1px 1px 3px 2px;
     border-radius: 15px;
-    width: 70%;
+    width: 80%;
     background-color: #fff;
 }
 .flexcuscare{
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 .cuspic{
     display: flex;
     justify-content: right;
 }
+.text{
+    margin-top: 10%;
+    margin-left: 8vw;
+
+}
 .text .textp1{
-    font-size: 15px;
-    margin-left: 9vh;
+    font-size: 1vw;
+    margin-left: 1vw;
     color: #321e43;
     font-weight: 700;
 }
 .text .textp2{
-    font-size: 15px;
+    font-size: 1vw;
     font-family: 'Inter';
     color: #321e43;
     font-style: italic;
-    margin-top: -20px;
-    margin-left: 1vw;
+    margin-top: -4%;
 }
 .text h1{
-    font-size: 80px;
+    font-size: 5vw;
     color: #321e43;
     font-family: poppins;
     font-family: poppins;
@@ -61,4 +66,86 @@
 .backg2{
     background-color: #bddbe5;
     width: 80%;
+}
+form{
+    padding: 20px;
+}
+.form{
+    font-family: poppins; 
+}
+.form input, textarea{
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    background-color: #ebe8e8;
+    outline-style: none !important;
+    font-size: 15px;
+    font-family: poppins;
+    flex-direction: column;
+}
+.form :hover{
+    border-color: #321e43;
+    border-width: 3px;
+}
+.btnsend{
+    color: #fff;
+    width: 85px;
+    padding: 5px;
+    background-color: #321e43;
+}
+
+@media only screen and (max-width: 1063px){
+   .text{
+    width: 100%;
+    margin-top: 7%;
+    margin-left: 8%
+   }
+   .text .textp1{
+    font-size: 1.5vw;
+    margin-left: 5px;
+   }
+   .text .textp2{
+    font-size: 1.5vw;
+    margin-top: 0;
+   }
+    .text h1{
+
+    }
+    .cgp{
+        padding: 10% 0 0 0;
+    }
+    .allback{
+        height: 150vw;
+    }
+    .boxcnt{
+        margin-top: 10%;
+    }
+    .boxcontent{
+        padding: 5px;
+        margin: 20px;
+    }
+    .cuspic{
+        justify-content: right;
+    }
+    .cuspic img{
+        width: 72%;
+    }
+    .boxcnt{
+        justify-content: none;
+    }
+    .boxcontent{
+        width: 100%;
+    }
+    .form{
+        padding: 5px;
+    }
+    .form input, textarea{
+        font-size: 2vw;
+    }
+}
+    
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    
 }

@@ -15,8 +15,16 @@ const Contact = () => {
                     </div>
                     <div className="cuspic"><img src={cuscare} alt="" srcset="" /></div>
                 </div>
+                <form action="" className='form'>
+                    <input type="text" name='text' placeholder='Enter name'  />
+                    <input type="email" name='email' placeholder='example@gmail.com'  />
+                    <input type="phone" name='phone' placeholder='+234'  />
+                    <textarea name="message" id="" cols="30" rows="10" placeholder='type here ...'></textarea>
+                    <button className='btnsend'>SEND</button>
+                </form>
             </div>
         </div>
+        
         <div className="allback">
             <div className="backg1"></div>
             <div className="backg2"></div>

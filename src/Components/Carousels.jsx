@@ -1,7 +1,7 @@
 import Carousel from "react-elastic-carousel";
 import { Link } from "react-router-dom";
 import './Carousel.css';
-import Api from "./Api";
+// import Api from "./Api";
 import portfolio1 from './Screenshot1.png'
 import portfolio2 from './Screenshot2.png'
 import portfolio3 from './Screenshot3.png'
@@ -20,10 +20,15 @@ const breakPoints = [
   ];
   
 const Carousels = () => {
-const {data, error, loading, refetch}= Api('https://v2.jokeapi.dev/joke/Any');
-// if (loading) return <h1 className="loading">Loading</h1>
-if (loading) return <div class="lds-spinner loading"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-if (error) return console.log(error)
+// //POST API
+//   const {response, sendDataToAPI }= Api('https://jsonplaceholder.typicode.com/posts')
+// // RANDOM GET API 
+//   const {data} = Api('https://jsonplaceholder.typicode.com/posts')
+//for joke GET API display page
+    // const {data, error, loading, refetch}= Api('https://v2.jokeapi.dev/joke/Any');
+    // // if (loading) return <h1 className="loading">Loading</h1>
+    // if (loading) return <div class="lds-spinner loading"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    // if (error) return console.log(error)
 
   return (
     <div>
@@ -36,8 +41,29 @@ if (error) return console.log(error)
         </div>
       </div>
      <div className="jokes">
-        <h1 className="joke">{data?.setup}-{data?.delivery}</h1>
-        <div className="jokesbutton"><button onClick={refetch} type="submit">Refresh Jokes</button></div>
+     {/* <div>
+POST API
+      <button onClick={sendDataToAPI}>Send Data to API</button>
+      {response && (
+        <div>
+          <h2>Response from API:</h2>
+          <pre>{JSON.stringify(response, null, 2)}</pre>
+        </div>
+      )}
+    </div> */}
+{/* RANDOM GET API */}
+      {/* <div>
+        <h1>API Data:</h1>
+        <h3>
+          {data.map((item) => (
+            <li style={{color: 'blue'}} key={item.id}>{item.title}</li>
+          ))}
+        </h3>
+      </div> */}
+{/* JOKES GET API DISPLAY */}
+        {/* for joke Api display page */}
+        {/* <h1 className="joke">{data?.setup}-{data?.delivery}</h1> */}
+        {/* <div className="jokesbutton"><button onClick={refetch} type="submit">Refresh Jokes</button></div> */}
      </div>
       <Carousel className="caro" enableAutoPlay autoPlaySpeed={9000}  enableInfiniteLoop breakPoints={breakPoints}>
         <Item>
@@ -91,3 +117,4 @@ if (error) return console.log(error)
 }
 
 export default Carousels
+
