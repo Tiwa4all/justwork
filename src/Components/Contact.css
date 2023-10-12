@@ -79,7 +79,7 @@ form{
     display: flex;
     width: 100%;
     background-color: #ebe8e8;
-    outline-style: none !important;
+    border: none;
     font-size: 15px;
     font-family: poppins;
     flex-direction: column;
@@ -89,6 +89,7 @@ form{
     border-width: 3px;
 }
 .btnsend{
+    font-family: poppins;
     color: #fff;
     width: 85px;
     padding: 5px;
@@ -116,7 +117,7 @@ form{
         padding: 10% 0 0 0;
     }
     .allback{
-        height: 150vw;
+        height: 190vw;
     }
     .boxcnt{
         margin-top: 10%;
@@ -141,7 +142,7 @@ form{
         padding: 5px;
     }
     .form input, textarea{
-        font-size: 2vw;
+        font-size: 4vw;
     }
 }
     

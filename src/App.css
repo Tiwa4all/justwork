@@ -124,9 +124,15 @@
 /* .Slxdj{
   color: #f8f4f4 !important;
 } */
-.cVXxbE{
+.cVXxbE, .goodpl, .gKPRtg, .rec-dot{
   background-color: #2f2f32 !important;
   box-shadow: 0 0 1px 3px rgb(240 240 240) !important;
+}
+.hGPzOw, .hGRYOm{
+  background-color: #000;
+}
+.hGRYOm:hover:enabled, .hGRYOm:focus:enabled{
+  background-color: #000;
 }
 /* .ezKHIn:hover{
   box-shadow: 0 0 1px 3px rgb(240 240 240);
