@@ -7,7 +7,8 @@ import {FaArrowRight} from 'react-icons/fa';
 
 const Subservices = () => {
   return (
-    <>
+    <div className='vsgroup'>
+      <div className="tm">VISION, GOALS AND OBJECTIVE</div>
       <div className="group">
         <div className='fl'>
             <div className="image1"><img src={Innovative} alt="" srcset="" /></div>
@@ -30,7 +31,7 @@ const Subservices = () => {
             <a href='#'><h2>Read More<FaArrowRight className='arrowright'/></h2></a>
             </div>
       </div>
-    </>
+    </div>
   )
 }
 

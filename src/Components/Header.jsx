@@ -9,7 +9,18 @@ import { Link } from 'react-router-dom'
 // hashlink for self-navigation
 
 const Header = ({change, tick}) => {
+    const [scroll, setScroll] = useState(false);
+    const changeNavbarColor = () => {
+    if (window.scrollY > 50) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+ };
 
+ useEffect(() => {
+    window.addEventListener('scroll', changeNavbarColor);
+ }, []);
     const dateBuilder = (d)=>{
         let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 
     'September', 'October', 'November', 'December'];
@@ -52,7 +63,7 @@ const Header = ({change, tick}) => {
      })
 
   return (
-    <div className="allheader1">
+    <div className={scroll ? 'allheader1 scroll' : 'allheader1'}>
         {/* first header with number */}
         <div className='allheader'>
             <div className="upper">
@@ -78,7 +89,7 @@ const Header = ({change, tick}) => {
                     </div>
                     <div className="menuoptflex">
                         {/* I used an onclick={shownavbar} to close navbar for mobile when each are clicked  */}
-                        <Link onClick={shownavbar} className="opt" to='/' smooth>Home</Link>
+                        <Link onClick={shownavbar} className="opt home" to='/' smooth>Home</Link>
                         <Link onClick={shownavbar} className="opt" to='/Aboutus' smooth>About Us</Link>
                                     {/* I used useRef for this dropdown */}
                         <div className="opt" ref={click} onClick={()=>setShowmenu(!showmenu)} to='' smooth>Services<FaCaretDown className='FaCaretDown'/>

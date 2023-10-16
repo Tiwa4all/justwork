@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+.banner{
+    padding: 13% 9% 9% 9%;
+}
+.banner h1 {
+        font-size: 65px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        line-height: 1;
+        margin-bottom: 20px;
+
+}
+.banner .tagline {
+    font-weight: 700;
+    font-family: poppins;
+    letter-spacing: 0.8px;
+    padding: 8px 10px;
+    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    margin-bottom: 16px;
+    display: inline-block;
+    color: #fff ;
+    border-radius: 5px;
+    padding: 10px 20px
+}
+.banner p {
+        color: #000;
+        font-size: 20px;
+        font-family: poppins;
+        letter-spacing: 0.8px;
+        line-height: 1.5em;
+        width: 96%;
+}
+.aligh-items-center{
+    display: flex;
+}
+.banner img{
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: updown;
+    /* animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal; */
+}
+@keyframes updown {
+    0%, 100% {
+        transform: translateY(0);
+     }
+      50% {
+        transform: translateY(-30px);
+     }
+    
+  }
+  @media only screen and (max-width: 767px){
+   .aligh-items-center{
+    flex-direction: column;
+   }
+   .banner{
+    padding: 25% 5% 9% 5%;
+   }
+   .banner h1{
+    font-size: 11vw;
+   }
+   .banner p{
+    width: 100%;
+    font-style: 16px;
+   }
+   .banner img{
+    width: 100%;
+    margin-top: 40px;
+   }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1211px){
+    .aligh-items-center{
+        flex-direction: column;
+    }
+    .banner{
+        padding: 18% 5% 9% 5%;
+   }
+    .banner img{
+        width: 100%;
+        margin-top: 40px;
+   }
+  }

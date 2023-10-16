@@ -1,6 +1,7 @@
 import './Aboutpage.css';
-import tim from './tim2.png'
+import tim from './tim2.jpg'
 import Ola from './Ola.jpg'
+import Rex from './Rexx.PNG'
 import Tochukwu from './Tochukwu.jpg';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Link } from 'react-router-dom';
@@ -22,22 +23,22 @@ const Aboutuspage = () => {
           <p>Some of the more rewarding projects we have had the honour to be involved in, started with simple ideas and grew profitable businesses from the ground up.</p>
         </div>
         <div className='teamfaces'>
-          <ScrollAnimation className="teamf firstimg" animateIn="bounceInDown" duration={1.7} delay={1.0}>
+          <ScrollAnimation className="teamf firstimg" animateIn="bounceInDown" initiallyVisible={true} duration={1.7} delay={1.0}>
               <div className="teampic"><img src={Ola} alt="" srcset="" /></div>
               <h1>Olaonipekun Wahab</h1>
               <p>CEO, PUSHTECHN</p>
           </ScrollAnimation>
-          <ScrollAnimation className="teamf secondimgg" animateIn="bounceInUp" duration={1.7} delay={1.0}>
+          <ScrollAnimation className="teamf secondimgg" animateIn="bounceInUp" initiallyVisible={true} duration={1.7} delay={1.0}>
               <div className="teampic"><img src={Tochukwu} alt="" srcset="" /></div>
-              <h1>Oluwatimilehin Wahab</h1>
+              <h1>Tochukwu Okaforb</h1>
               <p>Snr. Developer</p>
           </ScrollAnimation>
-            <ScrollAnimation className="teamf thirdimgg" animateIn="bounceInDown" duration={1.7} delay={1.0}>
-              <div className="teampic"><img src={Ola} alt="" srcset="" /></div>
-              <h1>Oluwatimilehin Wahab</h1>
+            <ScrollAnimation className="teamf thirdimgg" animateIn="bounceInDown" initiallyVisible={true} duration={1.7} delay={1.0}>
+              <div className="teampic"><img src={Rex} alt="" srcset="" /></div>
+              <h1>Rex Chukbuikem</h1>
               <p>CEO, PUSHTECHN</p>
             </ScrollAnimation>
-            <ScrollAnimation className="teamf fourthimgg" animateIn="bounceInUp" duration={1.7} delay={1.0}>
+            <ScrollAnimation className="teamf fourthimgg" animateIn="bounceInUp" initiallyVisible={true} duration={1.7} delay={1.0}>
               <div className="teampic"><img src={tim} alt="" srcset="" /></div>
               <h1>Oluwatimilehin Wahab</h1>
               <p>Web Developer</p>

@@ -3,7 +3,7 @@ import './boxanime.css'
 const Boxanime = () => {
   return (
     <div>
-      <div class="container">
+      <div class="containerr">
         {/* <hr className='phoneline'/>
         <div class="bulb">
           <div class="bulb__bg"></div>

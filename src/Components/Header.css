@@ -7,7 +7,11 @@
     position: fixed;
     width: 100%;
     z-index: 2;
+    /* box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 10%); */
   }
+  .allheader1.scroll {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   }
 .allheader{
     background-color: #212125;
     width: 100%;
@@ -16,9 +20,7 @@
     display: none;
 }
 .upper{
-    /* background-color: #2d2f30; */
-    background-color: #2f2f32;
-    /* background-color: #2f6e91; */
+    background-color: #ffffff;
     width: 100%;
     height: 100%;
     display: flex;
@@ -27,9 +29,10 @@
 }
 .upper p{
     font-family: abel;
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: bold;
     margin: 8px 8px 8px 0;
-    color: white;
+    color: #000;
 }
 .FaCaretDown{
     font-size: 18px;
@@ -37,28 +40,32 @@
     color: #ffffff9e;
 }
 .wholeflex{
-    background-color: #212125;
+    background-color: #fff;
 }
 .headerflex{
     display: flex;
-    justify-content: space-between;
-    padding: 0px 60px 5px 60px;
+    justify-content: space-around;
+    padding: 0px 80px 5px 80px;;
 }
 .dropmenu{
     display: none;
 }
-.logo{
-    margin-top: 1px;
-    width: 55%;
+.logo img{
+    margin-top: -8px;
+    width: 50%;
+    
 }
 .menuoptflex .opt{
     text-decoration: none;
 }
+a.opt.home{
+    color: #a41314 !important;
+ }
 .menuoptflex .opt{
     cursor: pointer;
-    color: white;
+    color: #000;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 22px;
     margin-bottom: 7px;
     letter-spacing: 1px;
@@ -66,7 +73,7 @@
     text-transform: uppercase;
 }
 .menuoptflex .opt:hover{
-    color: #ffffff;
+    color: #a10707;
     border-style: solid;
     border-width: 3px;
     border-left: none;
@@ -113,6 +120,9 @@
     font-weight: lighter;
  }
 @media only screen and (max-width: 767px){
+    .allheader{
+        background-color: #ffffff;
+    }
     .upper{
         padding: 0;
         display: flex;
@@ -162,16 +172,16 @@
     }
     .phoneview{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin: 0 10px 0 10px;
     }
     .logoview img{
-        width: 58%;
+        width: 30%;
     }
     .dropmenu{
         display: block;
-        margin: 7px 0 0 0;
-        color: white;
+        margin: 11px 0 0 0;
+        color: black;
     }
     .testing{
         margin-top: 0;

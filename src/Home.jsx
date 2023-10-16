@@ -8,13 +8,13 @@ import ClientReview from "./Components/ClientReview"
 const Home = () => {
   return (
     <div>
-        <Section1/>
+        <Clients/>
+        {/* <Section1/> */}
         <Subservices/>
         <Services/>
-        <Clients/>
         <AboutUs/>
-        <ClientReview/>
-        {/* "homepage": "{Tiwa4all}.github.io/{torun}", */}
+        <ClientReview/> */
+         {/* "homepage": "{Tiwa4all}.github.io/{torun}", */}
     </div>
   )
 }
